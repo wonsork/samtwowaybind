@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <app-bookborrow 
+      [rentable]="mybook" 
+      [sizeOfRange]= "fromRange" 
+      (bookState)="libraryBookSate($event)"
+      
+      ></app-bookborrow>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+
+    <ion-card>
+
+      <ion-card-content>
+        <ion-icon name="man" size="large"></ion-icon>      
+        <ion-icon name="book" size="large" *ngIf="mybook==true"></ion-icon>
+
+        <ion-button (click)="borrowBook()">대출</ion-button>
+        <ion-button (click)="returnBook()">반납</ion-button>
+
+        <ion-range labelPlacement="start" label="부모"
+        (ionChange)="onIonChange($event)"
+        ></ion-range>
+
+        <ion-chip>from child : {{ bookState}} </ion-chip>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>

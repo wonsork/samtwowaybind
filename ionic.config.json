@@ -1,0 +1,7 @@
+{
+  "name": "samtwowaybind",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

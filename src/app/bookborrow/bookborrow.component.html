@@ -1,0 +1,12 @@
+<ion-card>
+  <ion-card-content>
+    <ion-card-header>
+      <ion-button [disabled]="rentable">부모로 부터 받은 정보:{{rentable}} </ion-button> 
+    </ion-card-header>
+    <ion-range label="부모에게 받은 값: {{ sizeOfRange}} "
+    [value]="sizeOfRange"
+    (ionChange)="onIonChangeChild($event)"
+    ></ion-range>
+
+  </ion-card-content>
+</ion-card> 
