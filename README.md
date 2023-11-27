@@ -1,4 +1,4 @@
 # samtwowaybind
 Ionic 양방향 @Input @Output 예제 소스입니다.
 
-[ionic-2way.gif]
+[./ionic-2way.gif]
